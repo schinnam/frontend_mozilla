@@ -1,0 +1,107 @@
+Start the local webserver:
+python3 -m http.server 7800
+
+
+Text - Not sure yet
+
+Theme color - #3F7FBF
+
+Image: https://images.app.goo.gl/VipEt32HDTBsfX4i6
+Search by name & choose 'ready to resue' under licensing
+
+Fonts: 
+Embed Font: 
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+Specify in CSS:
+font-family: 'Lato', sans-serif;
+
+Coventions: Dont use spaces and cases in file names in frontend. Prefer dashes than under_Scores.
+
+Folder Structure: 
+- index.html
+- images folder
+- styles folder
+- scripts folder
+
+--------------
+<p>My cat is very grumpy</p> --> one element
+<p> --> opening tag
+My cat is very grumpy --> content
+</p> --> closing tag 
+
+Html elements can have attributes. EG: 
+<p class="editor-note" >My cat is very grumpy</p>
+An attribute should always have the following:
+
+    A space between it and the element name (or the previous attribute, if the element already has one or more attributes).
+    The attribute name followed by an equal sign.
+    The attribute value wrapped by opening and closing quotation marks.
+
+---------------
+You can put elements inside other elements too — this is called nesting.
+Eg: <p>My cat is <strong>very</strong> grumpy.</p>
+
+----------------
+Some elements have no content and are called empty elements.
+Eg: <img src="images/firefox-icon.png" alt="My test image">
+
+----------------
+<head></head> — the <head> element. This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations and more.
+----------------
+HTML contains 6 heading levels, <h1>–<h6>, although you'll commonly only use 3 to 4 at most:
+
+<h1>My main title</h1>
+<h2>My top level heading</h2>
+<h3>My subheading</h3>
+<h4>My sub-subheading</h4>
+-----------------
+Lists:
+Ordered List --> <ol>
+Unordered List  --> <ul>
+Each element --> <li>
+
+Links:
+<a> --> anchor, a link 
+Eg: <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a>
+
+====================================
+CSS - Cascading Styling Sheets
+
+We'll answer questions like: How do I make my text black or red? 
+How do I make my content show up in such-and-such a place on the screen? 
+How do I decorate my webpage with background images and colors?
+
+Eg:
+p {
+    color: red;
+
+}
+
+p --> Selector, it selects the element(s) to be styled (in this case, <p> elements).
+color --> Property
+red --> Property value 
+color: red --> Decalration 
+---------------------
+Boxes:
+    padding, the space just around the content (e.g., around paragraph text).
+    border, the solid line that sits just outside the padding.
+    margin, the space around the outside of the element.
+
+----------------------
+======================
+JavaScripts
+
+Events: Real interactivity on a website needs events. These are code structures which listen for things 
+happening in browser, running code in response. The most obvious example is the click event, which is fired 
+by the browser when you click on something with your mouse. 
+
+Eg:
+document.querySelector('html').onclick = function() {
+    alert('Ouch! Stop poking me!');
+}
+
+OR 
+
+var myHTML = document.querySelector('html');
+myHTML.onclick = function() {};
+
